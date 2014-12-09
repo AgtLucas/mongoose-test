@@ -1,0 +1,19 @@
+{
+  "name": "mongoose-test",
+  "version": "1.0.0",
+  "description": "mongoose-test =============",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AgtLucas/mongoose-test.git"
+  },
+  "author": "Lucas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AgtLucas/mongoose-test/issues"
+  },
+  "homepage": "https://github.com/AgtLucas/mongoose-test"
+}
