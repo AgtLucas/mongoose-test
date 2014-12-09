@@ -1,22 +1,12 @@
 'use strict';
 
 var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/test');
 
-mongoose.connect('mongodb://localhost/mongotest');
+var Cat = mongoose.model('Cat', { name: String });
 
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function callback () {
-  var kittySchema = mongoose.Schema({
-    name: String
-  });
-
-  var Kitten = mongoose.Model('Kitten', kittySchema);
-
-  var silence = new Kitten({name: 'Silence'});
-  silence.save(function (err) {
-    if (err)
-      console.error('Meow');
-  })
-  console.log(silence.name);
+var kitty = new Cat({ name: 'Pitou' });
+kitty.save(function (err) {
+  if (err)
+    console.log('Ops');
 });
