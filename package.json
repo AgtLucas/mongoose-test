@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AgtLucas/mongoose-test/issues"
   },
-  "homepage": "https://github.com/AgtLucas/mongoose-test"
+  "homepage": "https://github.com/AgtLucas/mongoose-test",
+  "dependencies": {
+    "mongoose": "^3.8.20"
+  }
 }
